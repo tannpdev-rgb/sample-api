@@ -14,7 +14,7 @@ const Chroma = require("./chroma");
   app.get("/chroma", async (req, res) => {
     try {
       const response = await axios.get(
-        "http://localhost:8000/api/v1/heartbeat"
+        "http://chroma:8000/api/v1/heartbeat"
       );
       res.json(response.data);
     } catch (err) {
