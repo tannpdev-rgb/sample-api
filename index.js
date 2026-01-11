@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3002
+const axios = require("axios")
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
